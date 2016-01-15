@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ben.jti.InputMessage"
+    android:background="#e2d4c3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just type your message"
+        android:layout_marginTop="60dp"
+        android:textSize="24sp"
+        android:id="@+id/justLine"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputMessage"
+        android:layout_below="@+id/justLine"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/justLine"
+        android:layout_alignEnd="@+id/justLine"
+        android:layout_alignLeft="@+id/justLine"
+        android:layout_alignStart="@+id/justLine"
+        android:background="#ffffff"
+        android:inputType="textShortMessage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK, SEND"
+        android:id="@+id/sendButton"
+        android:background="#3d7e25"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/inputMessage"
+        android:layout_alignStart="@+id/inputMessage"
+        android:layout_alignRight="@+id/inputMessage"
+        android:layout_alignEnd="@+id/inputMessage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/CS1"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/inputMessage"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/CS2"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/CS1"
+        android:layout_alignLeft="@+id/CS1"
+        android:layout_alignStart="@+id/CS1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/CS3"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/CS2"
+        android:layout_alignLeft="@+id/CS2"
+        android:layout_alignStart="@+id/CS2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/CS4"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/CS3"
+        android:layout_alignLeft="@+id/CS3"
+        android:layout_alignStart="@+id/CS3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/CS5"
+        android:background="?android:attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/CS4"
+        android:layout_alignLeft="@+id/CS4"
+        android:layout_alignStart="@+id/CS4" />
+
+</RelativeLayout>
