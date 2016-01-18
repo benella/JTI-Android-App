@@ -3,12 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ben.jti.InputMessage"
-    android:background="#e2d4c3">
+    android:background="#f4d474">
+
+
+    <ImageView
+        android:id="@+id/rectimage"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:src="@drawable/rectangle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/CS1">
+    </ImageView>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +29,9 @@
         android:textSize="24sp"
         android:id="@+id/justLine"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#4d6db4" />
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -30,15 +43,27 @@
         android:layout_alignEnd="@+id/justLine"
         android:layout_alignLeft="@+id/justLine"
         android:layout_alignStart="@+id/justLine"
-        android:background="#ffffff"
-        android:inputType="textShortMessage" />
+        android:padding="5dip"
+        android:background="@drawable/textback"
+        android:inputType="textMultiLine"
+        android:layout_marginRight="40dp" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:id="@+id/speach"
+        android:layout_alignTop="@+id/inputMessage"
+        android:layout_alignRight="@+id/justLine"
+        android:layout_alignEnd="@+id/justLine"
+        android:background="@drawable/mic"
+        android:layout_alignBottom="@+id/inputMessage" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OK, SEND"
         android:id="@+id/sendButton"
-        android:background="#3d7e25"
+        android:background="#ea5e3f"
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="#ffffff"
@@ -47,67 +72,90 @@
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/inputMessage"
         android:layout_alignStart="@+id/inputMessage"
+        android:layout_marginBottom="34dp"
         android:layout_alignRight="@+id/inputMessage"
-        android:layout_alignEnd="@+id/inputMessage" />
+        android:layout_alignEnd="@+id/justLine" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/CS1"
         android:background="?android:attr/selectableItemBackground"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#496bb1"
         android:layout_below="@+id/inputMessage"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/CS2"
         android:background="?android:attr/selectableItemBackground"
-        android:textStyle="bold"
         android:textSize="20sp"
         android:layout_below="@+id/CS1"
         android:layout_alignLeft="@+id/CS1"
-        android:layout_alignStart="@+id/CS1" />
+        android:layout_alignStart="@+id/CS1"
+        android:textColor="#c7496bb1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/CS3"
         android:background="?android:attr/selectableItemBackground"
-        android:textStyle="bold"
         android:textSize="20sp"
         android:layout_below="@+id/CS2"
         android:layout_alignLeft="@+id/CS2"
-        android:layout_alignStart="@+id/CS2" />
+        android:layout_alignStart="@+id/CS2"
+        android:textColor="#a0496bb1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/CS4"
         android:background="?android:attr/selectableItemBackground"
-        android:textStyle="bold"
         android:textSize="20sp"
         android:layout_below="@+id/CS3"
         android:layout_alignLeft="@+id/CS3"
-        android:layout_alignStart="@+id/CS3" />
+        android:layout_alignStart="@+id/CS3"
+        android:textColor="#82496bb1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/CS5"
         android:background="?android:attr/selectableItemBackground"
-        android:textStyle="bold"
         android:textSize="20sp"
         android:layout_below="@+id/CS4"
         android:layout_alignLeft="@+id/CS4"
-        android:layout_alignStart="@+id/CS4" />
+        android:layout_alignStart="@+id/CS4"
+        android:textColor="#5a496bb1" />
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/letters"-->
+        <!--android:src="@drawable/letters01"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_below="@+id/CS1" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/whologo"
+        android:src="@drawable/whoback01"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/CS1" />
+
+
+
 
 </RelativeLayout>

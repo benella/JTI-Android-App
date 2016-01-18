@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="choice1">#496bb1</color>
+    <color name="choice2">#c7496bb1</color>
+    <color name="choice3">#a0496bb1</color>
+    <color name="choice4">#82496bb1</color>
+    <color name="choice5">#5a496bb1</color>
+
+    <color name="selected">#ea5e3f</color>
 </resources>
